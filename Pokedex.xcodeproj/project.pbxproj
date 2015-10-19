@@ -45,7 +45,6 @@
 			isa = PBXGroup;
 			children = (
 				B7943F331BD5121400F876C4 /* Pokedex */,
-				B7943F511BD51DA300F876C4 /* Controller */,
 				B7943F481BD5147800F876C4 /* Support */,
 				B7943F321BD5121400F876C4 /* Products */,
 			);
@@ -64,6 +63,7 @@
 			children = (
 				B7943F491BD5154B00F876C4 /* Model */,
 				B7943F4E1BD51C3200F876C4 /* View */,
+				B7943F511BD51DA300F876C4 /* Controller */,
 			);
 			path = Pokedex;
 			sourceTree = "<group>";
@@ -104,7 +104,6 @@
 				B7943F361BD5121400F876C4 /* ViewController.swift */,
 			);
 			name = Controller;
-			path = Pokedex;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

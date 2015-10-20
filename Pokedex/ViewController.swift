@@ -70,7 +70,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
             let rows = csvParser.rows
         
             for row in rows {
-                if let pokename = row["identifier"], let pokeId = Int(row["id"]!) {
+                if let pokename = row["identifier"], let pokeId = row["id"] {
                     let pokemon = Pokemon(name: pokename, pokedexId: pokeId)
                     pokemons.append(pokemon)
                 }

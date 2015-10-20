@@ -10,15 +10,26 @@ import UIKit
 
 class ViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
 
-    override func viewDidLoad() {
+    
+    @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var searchBar: UISearchBar!
+    
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
-        
+        collectionView.delegate = self
+        collectionView.dataSource = self
     }
 
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell
     {
         if let cell = collectionView.dequeueReusableCellWithReuseIdentifier("Cell", forIndexPath: indexPath) as? PokeCell {
+            
+            let pokemon = Pokemon(name: "Test", pokedexId: indexPath.row)
+            
+            cell.configureCell(pokemon)
+            
             return cell
         } else {
             return UICollectionViewCell()
@@ -30,7 +41,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     }
     
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 30
+        return 718
     }
     
     func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {

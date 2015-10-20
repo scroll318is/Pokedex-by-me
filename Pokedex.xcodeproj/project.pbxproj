@@ -61,6 +61,7 @@
 		B7943F331BD5121400F876C4 /* Pokedex */ = {
 			isa = PBXGroup;
 			children = (
+				B7943F381BD5121400F876C4 /* Main.storyboard */,
 				B7943F491BD5154B00F876C4 /* Model */,
 				B7943F4E1BD51C3200F876C4 /* View */,
 				B7943F511BD51DA300F876C4 /* Controller */,
@@ -93,7 +94,6 @@
 			isa = PBXGroup;
 			children = (
 				B7943F4F1BD51C6A00F876C4 /* PokeCell.swift */,
-				B7943F381BD5121400F876C4 /* Main.storyboard */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -330,6 +330,7 @@
 				B7943F451BD5121400F876C4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

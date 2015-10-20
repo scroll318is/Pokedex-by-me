@@ -114,6 +114,10 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="collectionView" destination="bzp-JX-0TA" id="tmf-b8-i0R"/>
+                        <outlet property="searchBar" destination="tlN-k1-Lgh" id="5lB-p0-gjK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

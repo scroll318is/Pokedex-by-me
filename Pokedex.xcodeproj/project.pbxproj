@@ -20,6 +20,7 @@
 		B7943F471BD5145100F876C4 /* pokemon.csv in Resources */ = {isa = PBXBuildFile; fileRef = B7943F461BD5145100F876C4 /* pokemon.csv */; settings = {ASSET_TAGS = (); }; };
 		B7943F4B1BD5156600F876C4 /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7943F4A1BD5156600F876C4 /* Pokemon.swift */; settings = {ASSET_TAGS = (); }; };
 		B7943F501BD51C6A00F876C4 /* PokeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7943F4F1BD51C6A00F876C4 /* PokeCell.swift */; settings = {ASSET_TAGS = (); }; };
+		B7EB2F9C1BD66A7300429A33 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7EB2F9B1BD66A7300429A33 /* Constants.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 		B7943F461BD5145100F876C4 /* pokemon.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = pokemon.csv; sourceTree = "<group>"; };
 		B7943F4A1BD5156600F876C4 /* Pokemon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pokemon.swift; sourceTree = "<group>"; };
 		B7943F4F1BD51C6A00F876C4 /* PokeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokeCell.swift; sourceTree = "<group>"; };
+		B7EB2F9B1BD66A7300429A33 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		C3ED8A3F9653F2ED0314DDA0 /* Pods-Pokedex.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pokedex.release.xcconfig"; path = "Pods/Target Support Files/Pods-Pokedex/Pods-Pokedex.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -74,6 +76,7 @@
 		B71F025B1BD623480096E122 /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				B7EB2F9B1BD66A7300429A33 /* Constants.swift */,
 				B71F02591BD623130096E122 /* csv.swift */,
 			);
 			name = Util;
@@ -286,6 +289,7 @@
 				B7943F371BD5121400F876C4 /* ViewController.swift in Sources */,
 				B7943F351BD5121400F876C4 /* AppDelegate.swift in Sources */,
 				B71F02621BD63D540096E122 /* PokemonDetailVC.swift in Sources */,
+				B7EB2F9C1BD66A7300429A33 /* Constants.swift in Sources */,
 				B7943F4B1BD5156600F876C4 /* Pokemon.swift in Sources */,
 				B71F025A1BD623130096E122 /* csv.swift in Sources */,
 			);

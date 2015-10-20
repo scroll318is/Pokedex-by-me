@@ -10,6 +10,7 @@
 		B71F025A1BD623130096E122 /* csv.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71F02591BD623130096E122 /* csv.swift */; settings = {ASSET_TAGS = (); }; };
 		B71F025E1BD6284C0096E122 /* PokemonFont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B71F025D1BD6284C0096E122 /* PokemonFont.ttf */; settings = {ASSET_TAGS = (); }; };
 		B71F02601BD629790096E122 /* music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B71F025F1BD629790096E122 /* music.mp3 */; settings = {ASSET_TAGS = (); }; };
+		B71F02621BD63D540096E122 /* PokemonDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71F02611BD63D540096E122 /* PokemonDetailVC.swift */; settings = {ASSET_TAGS = (); }; };
 		B7943F351BD5121400F876C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7943F341BD5121400F876C4 /* AppDelegate.swift */; };
 		B7943F371BD5121400F876C4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7943F361BD5121400F876C4 /* ViewController.swift */; };
 		B7943F3A1BD5121400F876C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7943F381BD5121400F876C4 /* Main.storyboard */; };
@@ -24,6 +25,7 @@
 		B71F02591BD623130096E122 /* csv.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = csv.swift; sourceTree = "<group>"; };
 		B71F025D1BD6284C0096E122 /* PokemonFont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = PokemonFont.ttf; sourceTree = "<group>"; };
 		B71F025F1BD629790096E122 /* music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = music.mp3; sourceTree = "<group>"; };
+		B71F02611BD63D540096E122 /* PokemonDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokemonDetailVC.swift; sourceTree = "<group>"; };
 		B7943F311BD5121400F876C4 /* Pokedex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pokedex.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7943F341BD5121400F876C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B7943F361BD5121400F876C4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -127,6 +129,7 @@
 			isa = PBXGroup;
 			children = (
 				B7943F361BD5121400F876C4 /* ViewController.swift */,
+				B71F02611BD63D540096E122 /* PokemonDetailVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -207,6 +210,7 @@
 				B7943F501BD51C6A00F876C4 /* PokeCell.swift in Sources */,
 				B7943F371BD5121400F876C4 /* ViewController.swift in Sources */,
 				B7943F351BD5121400F876C4 /* AppDelegate.swift in Sources */,
+				B71F02621BD63D540096E122 /* PokemonDetailVC.swift in Sources */,
 				B7943F4B1BD5156600F876C4 /* Pokemon.swift in Sources */,
 				B71F025A1BD623130096E122 /* csv.swift in Sources */,
 			);
@@ -321,6 +325,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Pokedex/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kostov.Pokedex;
@@ -332,6 +337,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Pokedex/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kostov.Pokedex;

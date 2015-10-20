@@ -18,6 +18,8 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
   
     let MUSIC_BTN_REDUCED_ALPHA = 0.5 as CGFloat
     
+    let POKEMON_DETAIL_SEGUE = "PokemonDetailSegue"
+    
     var pokemons = [Pokemon]()
     var filterdPokemons = [Pokemon]()
     var isInSearchMode = false
@@ -132,7 +134,14 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath)
     {
+        let poke: Pokemon!
+        if isInSearchMode {
+            poke = filterdPokemons[indexPath.row]
+        } else {
+            poke = pokemons[indexPath.row]
+        }
         
+        performSegueWithIdentifier(POKEMON_DETAIL_SEGUE, sender: poke)
     }
     
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int
@@ -153,6 +162,17 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize
     {
           return CGSizeMake(105, 105)
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)
+    {
+        if segue.identifier == POKEMON_DETAIL_SEGUE {
+            if let detailsVC = segue.destinationViewController as? PokemonDetailVC {
+                if let poke = sender as? Pokemon {
+                    detailsVC.pokemon = poke
+                }
+            }
+        }
     }
     
 }

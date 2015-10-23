@@ -208,7 +208,7 @@
                                     <constraint firstItem="OR1-4w-Wp3" firstAttribute="centerY" secondItem="DmZ-j1-a19" secondAttribute="centerY" id="uzd-B7-TV2"/>
                                 </constraints>
                             </view>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="1M1-Mb-AU1">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="1M1-Mb-AU1">
                                 <rect key="frame" x="20" y="63" width="560" height="387"/>
                                 <subviews>
                                     <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Uz3-N0-KAu">
@@ -226,10 +226,10 @@
                                         <color key="tintColor" red="1" green="0.32118626649999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     </segmentedControl>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="MS1-1v-6Df">
-                                        <rect key="frame" x="0.0" y="33" width="560" height="281"/>
+                                        <rect key="frame" x="0.0" y="50" width="560" height="196"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="107" translatesAutoresizingMaskIntoConstraints="NO" id="9k0-wU-Yz0">
-                                                <rect key="frame" x="0.0" y="0.0" width="120" height="281"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="120" height="196"/>
                                                 <animations/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="120" id="jWl-BN-Cjy"/>
@@ -240,29 +240,29 @@
                                                         <exclude reference="pLR-zW-rHR"/>
                                                     </mask>
                                                 </variation>
-                                                <variation key="heightClass=compact-widthClass=regular" misplaced="YES">
-                                                    <rect key="frame" x="0.0" y="0.0" width="120" height="167"/>
+                                                <variation key="heightClass=compact" misplaced="YES">
+                                                    <rect key="frame" x="0.0" y="0.0" width="120" height="106"/>
                                                 </variation>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="a1A-oo-odV">
-                                                <rect key="frame" x="120" y="0.0" width="440" height="281"/>
+                                                <rect key="frame" x="120" y="0.0" width="440" height="196"/>
                                                 <animations/>
                                                 <string key="text">"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</string>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
                                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <nil key="highlightedColor"/>
-                                                <variation key="heightClass=compact-widthClass=regular" misplaced="YES">
-                                                    <rect key="frame" x="120" y="0.0" width="640" height="167"/>
+                                                <variation key="heightClass=compact" misplaced="YES">
+                                                    <rect key="frame" x="120" y="0.0" width="440" height="106"/>
                                                 </variation>
                                             </label>
                                         </subviews>
                                         <animations/>
-                                        <variation key="heightClass=compact-widthClass=regular" misplaced="YES">
-                                            <rect key="frame" x="0.0" y="23" width="760" height="167"/>
+                                        <variation key="heightClass=compact" misplaced="YES">
+                                            <rect key="frame" x="0.0" y="38" width="560" height="106"/>
                                         </variation>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="wzX-QV-gRj">
-                                        <rect key="frame" x="0.0" y="317" width="560" height="20"/>
+                                        <rect key="frame" x="0.0" y="266" width="560" height="20"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Type:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZT9-tb-9l7">
                                                 <rect key="frame" x="0.0" y="0.0" width="140" height="20"/>
@@ -292,23 +292,23 @@
                                             </label>
                                         </subviews>
                                         <animations/>
-                                        <variation key="heightClass=compact-widthClass=regular" misplaced="YES">
-                                            <rect key="frame" x="0.0" y="193" width="760" height="20"/>
+                                        <variation key="heightClass=compact" misplaced="YES">
+                                            <rect key="frame" x="0.0" y="152" width="560" height="20"/>
                                         </variation>
                                     </stackView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iyI-yq-aS2">
-                                        <rect key="frame" x="0.0" y="340" width="560" height="1"/>
+                                        <rect key="frame" x="0.0" y="306" width="560" height="1"/>
                                         <animations/>
                                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="1" id="G7B-hN-iFK"/>
                                         </constraints>
-                                        <variation key="heightClass=compact-widthClass=regular" misplaced="YES">
-                                            <rect key="frame" x="0.0" y="216" width="760" height="1"/>
+                                        <variation key="heightClass=compact" misplaced="YES">
+                                            <rect key="frame" x="0.0" y="180" width="560" height="1"/>
                                         </variation>
                                     </view>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="XQL-L6-cEp">
-                                        <rect key="frame" x="0.0" y="344" width="560" height="20"/>
+                                        <rect key="frame" x="0.0" y="327" width="560" height="20"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Height:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ep8-aM-3fk">
                                                 <rect key="frame" x="0.0" y="0.0" width="140" height="20"/>
@@ -341,8 +341,8 @@
                                         <constraints>
                                             <constraint firstItem="Q4D-IV-Inh" firstAttribute="baseline" secondItem="Ep8-aM-3fk" secondAttribute="firstBaseline" id="Wve-kP-GuR"/>
                                         </constraints>
-                                        <variation key="heightClass=compact-widthClass=regular" misplaced="YES">
-                                            <rect key="frame" x="0.0" y="220" width="760" height="20"/>
+                                        <variation key="heightClass=compact" misplaced="YES">
+                                            <rect key="frame" x="0.0" y="189" width="560" height="20"/>
                                         </variation>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="oeW-yb-xvP">
@@ -386,6 +386,7 @@
                                     <constraint firstAttribute="trailing" secondItem="iyI-yq-aS2" secondAttribute="trailing" id="YX4-ss-M7t"/>
                                     <constraint firstItem="iyI-yq-aS2" firstAttribute="leading" secondItem="1M1-Mb-AU1" secondAttribute="leading" id="lI3-7p-xpP"/>
                                 </constraints>
+                                <variation key="heightClass=compact" spacing="8"/>
                             </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uYG-PG-NPm">
                                 <rect key="frame" x="0.0" y="458" width="600" height="26"/>

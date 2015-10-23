@@ -32,14 +32,48 @@ class PokemonDetailVC: UIViewController {
         pokemonLbl.text = pokemon.name
         mainImage.image = UIImage(named: pokemon.pokedexId)
         currnetEvolutionImage.image = mainImage.image
-        updateUi()
+
+        let activityIndicator = UIActivityIndicatorView()
+        activityIndicator.center = view.center
+        activityIndicator.color = UIColor.blueColor()
+        activityIndicator.startAnimating()
+        
+        let greyView = UIView(frame: view.bounds)
+        greyView.backgroundColor = UIColor.blackColor()
+        greyView.alpha = 0.4
+        
+        greyView.translatesAutoresizingMaskIntoConstraints = false
+        activityIndicator.translatesAutoresizingMaskIntoConstraints = false
+        
+        let constraint_top    = NSLayoutConstraint(item: greyView, attribute: .Top,      relatedBy: .Equal, toItem: view, attribute: .Top,      multiplier: 1.0, constant: 0)
+        let constraint_bottom = NSLayoutConstraint(item: greyView, attribute: .Bottom,   relatedBy: .Equal, toItem: view, attribute: .Bottom,   multiplier: 1.0, constant: 0)
+        let constraint_left   = NSLayoutConstraint(item: greyView, attribute: .Leading,  relatedBy: .Equal, toItem: view, attribute: .Leading,  multiplier: 1.0, constant: 0)
+        let constraint_right  = NSLayoutConstraint(item: greyView, attribute: .Trailing, relatedBy: .Equal, toItem: view, attribute: .Trailing, multiplier: 1.0, constant: 0)
+        
+        let activity_horizontal_center = NSLayoutConstraint(item: activityIndicator, attribute: .CenterX, relatedBy: .Equal, toItem: view, attribute: .CenterX, multiplier: 1.0, constant: 0)
+        let  activity_vertical_center = NSLayoutConstraint(item: activityIndicator, attribute: .CenterY, relatedBy: .Equal, toItem: view, attribute: .CenterY, multiplier: 1.0, constant: 0)
+        
+        view.addSubview(greyView)
+        view.addSubview(activityIndicator)
+        
+        view.addConstraint(constraint_top)
+        view.addConstraint(constraint_bottom)
+        view.addConstraint(constraint_left)
+        view.addConstraint(constraint_right)
+        
+        view.addConstraint(activity_horizontal_center)
+        view.addConstraint(activity_vertical_center)
         
         pokemon.downloadPokemonDetails({
+            greyView.removeFromSuperview()
+            activityIndicator.stopAnimating()
+            activityIndicator.removeFromSuperview()
             self.updateUi()
         })
     }
     
     func updateUi() {
+        
         descriptionLbl.text = pokemon.description
         defenceLbl.text = pokemon.defence
         typeLbl.text = pokemon.type
